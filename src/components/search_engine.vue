@@ -30,7 +30,7 @@ export default {
     },
     computed: {
         searchAddress() {
-            return `http://${store.state.weather_api.url}/search.json?key=${store.state.weather_api.key}&q=`;
+            return `https://${store.state.weather_api.url}/search.json?key=${store.state.weather_api.key}&q=`;
         },
         isSuggested() {
             return this.suggestion.length > 0;

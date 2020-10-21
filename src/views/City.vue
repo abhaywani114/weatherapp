@@ -81,7 +81,7 @@ export default {
     },
      computed: {
         currentFetchDataAddress() {
-            return `http://${store.state.weather_api.url}/forecast.json?key=${store.state.weather_api.key}&days=7&q=`;
+            return `https://${store.state.weather_api.url}/forecast.json?key=${store.state.weather_api.key}&days=7&q=`;
         },
         routeKey() {
             return this.$route.params.key
